@@ -135,4 +135,10 @@ body{
     .item-column{
         grid-template-columns: 1fr;
     }
+    .langChange{
+        position: relative;
+        left: auto;
+        top: -1000px;
+
+    }
 }
