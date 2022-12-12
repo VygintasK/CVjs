@@ -1,0 +1,138 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cvWrapper{
+    display: grid;
+    grid-template-columns: 10mm 65mm 135mm;
+    max-width: 21cm;
+    max-height: 297mm;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+.border{
+    background-color: grey;
+}
+
+
+.personal-info{
+    background-color: lightgray;
+    font-size: 16px;
+    font: weight 200px;;
+    padding: 20px;
+}
+.title{
+    border-color: grey;
+    border-bottom-style: solid;
+    padding: 3px;
+    margin-bottom: 0px;
+}
+.personal-details-wrapper .text{
+ padding-left: 10px;
+}
+.personal-details-wrapper .item{
+    font-size: 14px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.language-item{
+    display: flex;
+    justify-content:space-between;   
+}
+.language-item p{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.dot-wrap{
+    align-items:center;
+    display: flex;
+}
+/*  */
+.lang-dot-colored, .lang-dot-uncolored{
+    border-color: #703233;
+    border-style: solid;
+    height: 8px;
+    width: 8px;
+    background-color: #703233;
+    border-radius: 50%;
+    display: inline-block;
+    margin:4px;
+    -webkit-print-color-adjust: exact;
+}
+.lang-dot-uncolored{
+    background-color:unset;
+}
+/*  */
+
+.main-info{
+    background-color: rgb(240, 240, 240);
+    padding:20px;
+}
+.main-info p{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.main-info .item-title{
+    
+}
+.employment-item,.education-item{
+    display: grid;
+    grid-template-areas: 
+                    "title date"
+                    "company empty"
+                    "itemInfo empty";
+}
+.main-info .item-title{
+    grid-area: title;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    
+}
+.main-info .item-date{
+    grid-area: date;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    justify-self: end;
+}
+.main-info .item-company{
+    grid-area: company;
+    margin-bottom: 0px;
+}
+.main-info .item-info{
+    grid-area: itemInfo;
+}
+
+
+@media screen and (max-width: 768px) {
+    .cvWrapper{
+        grid-template-columns: 1fr 6fr 13fr;
+    }
+    .item-column{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .cvWrapper{
+        grid-template-columns: 1fr 10fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+                        "left right1"
+                        "left right2";
+    }
+    .border{
+        grid-area: left;
+    }
+    .personal-info{
+        grid-area: right1;
+    }
+    .main-info{
+        grid-area: right2;
+    }
+    .item-column{
+        grid-template-columns: 1fr;
+    }
+}
