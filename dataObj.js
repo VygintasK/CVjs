@@ -100,7 +100,7 @@ let personDataObj={
             driversLicense: "B - kategorija",
         },
         skills:{
-            title:"Gebejimai",
+            title:"Gebėjimai",
             skillList:["Java script", "React", "HTML", "CSS", "SASS", "Bootstrap", "GitHub"]
         },
         languages:{
