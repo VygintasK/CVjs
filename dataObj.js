@@ -12,6 +12,7 @@ let personDataObj={
             linkedIn: "https://www.linkedin.com/in/ Vygintas-Kirda/",
             gitHub: "https://github.com/VygintasK?tab=repositories",
             driversLicense: "B - category",
+            summary:'I am a junior frontend developer with solid fundamentals in HTML, CSS, JavaScript and ReactJS. I recently graduated from the "CodeAcademy" Front-end Serverless courses and have been learning independently since then to gain experience. I am a fast learner and am always looking for an opportunity to expand my knowledge and skills in front-end development. I am looking forward to joining a team of experienced developers and contributing to the development of innovative and user-friendly products.',
         },
         skills:{
             title:"Skills",
@@ -98,6 +99,7 @@ let personDataObj={
             linkedIn: "https://www.linkedin.com/in/ Vygintas-Kirda/",
             gitHub: "https://github.com/VygintasK?tab=repositories",
             driversLicense: "B - kategorija",
+            summary:'Esu jaunesnysis programuotojas su geru HTML, CSS, JavaScript ir ReactJS pagrindu. Neseniai baigiau  "CodeAcademy" Front-end Serverless studijas ir toliau mokausi savarankiškai bandydamas įgaut patirties. Esu imlus technologijoms ir visada ieškau galimybės mokytis ir plėsti žinias front-end development srityje. Laukiu galimybės prisijungti prie patyrusio kolektyvo, mokytis ir prisidėti kuriant inovatyvias aplikacijas.',
         },
         skills:{
             title:"Gebėjimai",

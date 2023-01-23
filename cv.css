@@ -31,7 +31,7 @@ body{
     margin-bottom: 0px;
 }
 .personal-details-wrapper .text{
- padding-left: 10px;
+    padding-left: 10px;
 }
 .personal-details-wrapper .item{
     font-size: 14px;
@@ -71,38 +71,58 @@ body{
     background-color: rgb(240, 240, 240);
     padding:20px;
 }
+.langChange{
+    background-color: #703233;
+    color: lightgray;
+    border: none;
+    padding: 5px 10px;
+}
+.langChange:hover{
+    cursor:pointer;
+}
 .main-info p{
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
-.main-info .item-title{
-    
+
+.summary{
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 20px;
+    padding: 0px;
+    margin: 0px;
 }
+
 .employment-item,.education-item{
     display: grid;
     grid-template-areas: 
                     "title date"
                     "company empty"
-                    "itemInfo empty";
+                    "itemInfo itemInfo";
 }
 .main-info .item-title{
     grid-area: title;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-bottom: 0px;
     
 }
 .main-info .item-date{
     grid-area: date;
-    margin-top: 25px;
+    margin-top: 15px;
+    font-size: 15px;
     margin-bottom: 0px;
     justify-self: end;
 }
 .main-info .item-company{
     grid-area: company;
     margin-bottom: 0px;
+    font-size: 15px;
 }
 .main-info .item-info{
     grid-area: itemInfo;
+    font-size: 15px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 
@@ -147,9 +167,11 @@ body{
         grid-template-columns: 1fr;
     }
     .langChange{
-        position: relative;
+        position: absolute;
+        top: 33px;
+        left: 70px;
+        /* position: relative;
         left: auto;
-        top: -1050px;
-
+        top: -1000px; */
     }
 }

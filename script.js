@@ -17,7 +17,7 @@ function renderCv(lang){
     let personalInfo = document.querySelector('.personal-info')
     personalInfo.innerHTML=''
 
-    let { skills, hobbies, languages, personalDetails, education, employment } = personDataObj[lang]
+    let { skills, hobbies, languages, personalDetails, education, employment} = personDataObj[lang]
 
     let langArr = languages.languageList
     let langNewArr = langArr.map(element => {
@@ -42,10 +42,13 @@ function renderCv(lang){
         langItem.append(langDotDivElm)
 
         return langItem
-
     });
+
     let nameTitleElm = createElement('h1', 'name')
     nameTitleElm.textContent = personalDetails.name + ' ' + personalDetails.surname
+    let summaryElm = createElement('p','summary')
+    summaryElm.textContent = personalDetails.summary
+
 
     let educationWrap = createElement('div', 'education-wrap')
     let educationArr = education.educationList
@@ -72,7 +75,6 @@ function renderCv(lang){
         employmentWrap.append(employmentItem)
     })
 
-    console.log(createPersonDetail(lang))
     personalInfo.append(
         createPersonDetail(lang),
         createList(skills.title, skills.skillList),
@@ -82,13 +84,13 @@ function renderCv(lang){
     main.prepend(
         buttonElm,
         nameTitleElm,
+        summaryElm,
         createTitle(education.title),
         educationWrap,
         createTitle(employment.title),
         employmentWrap,
     )
 }
-
 
 function createDetailItem(text, imgName) {
     let src = `./CVIcons/${imgName}.svg`
